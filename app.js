@@ -1,3 +1,5 @@
+// Github Actualiation
+
 import { gsap } from "gsap";
 
 const slides = Array.from(document.querySelectorAll(".slide"));
