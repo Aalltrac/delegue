@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" aria-label="En-tête">
+    <div class="brand">
+      <img src="PicsArt_07-18-09.21.50 (1).png" alt="Logo" class="logo" />
+      <span class="brand-name"></span>
+    </div>
+    <nav class="controls" aria-label="Contrôles du diaporama">
+      <button class="ctrl-btn prev" aria-label="Diapo précédente">←</button>
+      <button class="ctrl-btn next" aria-label="Diapo suivante">→</button>
+    </nav>
+  </header>
+
+  <main id="slides" class="slides" aria-live="polite">
+    <section class="slide is-blue" data-slide="0" aria-label="Accueil">
+      <div class="content">
+        <img src="PicsArt_07-18-09.21.50 (1).png" alt="Logo" class="hero-logo" />
+        <h1 class="title">Votez pour un délégué engagé</h1>
+        <p class="subtitle">À l’écoute, efficace et présent pour tous.</p>
+      </div>
+    </section>
+
+    <section class="slide is-white" data-slide="1" aria-label="Qualités">
+      <div class="content">
+        <h2 class="title">Mes qualités</h2>
+        <ul class="grid">
+          <li class="card">
+            <h3>Écoute</h3>
+            <p>Je prends en compte chaque avis pour représenter la classe avec justesse.</p>
+          </li>
+          <li class="card">
+            <h3>Fiabilité</h3>
+            <p>Toujours disponible et organisé pour des actions concrètes.</p>
+          </li>
+          <li class="card">
+            <h3>Respect</h3>
+            <p>Des échanges sereins et constructifs, dans l’intérêt de tous.</p>
+          </li>
+          <li class="card">
+            <h3>Esprit d’équipe</h3>
+            <p>Je favorise la coopération et la cohésion au quotidien.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide is-blue" data-slide="2" aria-label="Engagements">
+      <div class="content">
+        <h2 class="title">Mes engagements</h2>
+        <ul class="bullets">
+          <li>Être disponible pour recueillir vos idées et préoccupations.</li>
+          <li>Transmettre fidèlement vos messages aux enseignants et à l’administration.</li>
+          <li>Proposer des initiatives pour améliorer la vie de classe.</li>
+          <li>Assurer un suivi clair et transparent des actions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide is-white" data-slide="3" aria-label="Vote">
+      <div class="content">
+        <h2 class="title">Pourquoi voter pour moi ?</h2>
+        <p class="lead">Pour une représentation efficace, positive et respectueuse.</p>
+        <div class="cta">
+          <button class="vote-btn">Je soutien cette candidature</button>
+          <p class="note">Le jour du vote, faites entendre votre voix.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="dots" aria-label="Navigation par points">
+    <button class="dot" data-target="0" aria-label="Aller à la diapo 1"></button>
+    <button class="dot" data-target="1" aria-label="Aller à la diapo 2"></button>
+    <button class="dot" data-target="2" aria-label="Aller à la diapo 3"></button>
+    <button class="dot" data-target="3" aria-label="Aller à la diapo 4"></button>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "gsap": "https://esm.sh/gsap@3.12.5"
+    }
+  }
+  </script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
